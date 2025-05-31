@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriately as they are your "business card" -->
+  <meta name="description" content="CountingFruit: Real-Time 3D Fruit Counting with Language-Guided Semantic Gaussian Splatting">
+  <meta property="og:title" content="CountingFruit: Real-Time 3D Fruit Counting with Language-Guided Semantic Gaussian Splatting"/>
+  <meta property="og:description" content="A real-time 3D fruit counting framework that uses language-guided semantic Gaussian splatting for efficient orchard-scale reconstruction and counting."/>
+  <meta property="og:url" content="https://your-domain.com/countingfruit"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimensions are 1200×630 -->
+  <meta property="og:image" content="static/images/banner_countingfruit.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+  <meta name="twitter:title" content="CountingFruit: Real-Time 3D Fruit Counting with Language-Guided Semantic Gaussian Splatting">
+  <meta name="twitter:description" content="A real-time 3D fruit counting framework that uses language-guided semantic Gaussian splatting for efficient orchard-scale reconstruction and counting.">
+  <meta name="twitter:image" content="static/images/banner_countingfruit.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Keywords for your paper to be indexed by search engines -->
+  <meta name="keywords" content="Fruit Counting, 3D Reconstruction, Gaussian Splatting, CLIP, Semantic Filtering, Precision Agriculture">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CountingFruit: Real-Time 3D Fruit Counting with Language-Guided Semantic Gaussian Splatting</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+  <!-- ==================== Header Section ==================== -->
+  <section class="hero is-primary is-bold">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+              CountingFruit: Real-Time 3D Fruit Counting with Language-Guided Semantic Gaussian Splatting
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Replace with actual author names and links -->
+              <span class="author-block">
+                <a href="https://your-domain.com/author1" target="_blank">First Author</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://your-domain.com/author2" target="_blank">Second Author</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://your-domain.com/author3" target="_blank">Third Author</a><sup>2</sup>
+              </span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <sup>1</sup> Institute of Robotics and Intelligent Systems, University A<br>
+                <sup>2</sup> Department of Computer Science, University B<br>
+                SCAASA 2025
+              </span>
+            </div>
+            <div class="column has-text-centered" style="margin-top: 1rem;">
+              <div class="publication-links">
+                <!-- Paper PDF link -->
+                <span class="link-block">
+                  <a href="static/pdfs/CountingFruit_paper.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>Download Paper</span>
+                  </a>
+                </span>
+                <!-- Supplementary Materials link (if any) -->
+                <span class="link-block">
+                  <a href="static/pdfs/CountingFruit_supplementary.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>Supplementary</span>
+                  </a>
+                </span>
+                <!-- Code Repository link -->
+                <span class="link-block">
+                  <a href="https://github.com/your-username/CountingFruit" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- BibTeX link or ArXiv link if applicable -->
+                <span class="link-block">
+                  <a href="#BibTeX" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="ai ai-bibtex"></i></span>
+                    <span>BibTeX</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ==================== /Header Section ==================== -->
+
+  <!-- ==================== Teaser Video Section ==================== -->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video poster="static/images/teaser_poster.png" id="teaser-video" autoplay controls muted loop height="100%">
+          <source src="static/videos/countingfruit_teaser.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
+          An overview of the FruitLangGS pipeline for real-time 3D reconstruction and fruit counting in orchard scenes.
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- ==================== /Teaser Video Section ==================== -->
+
+  <!-- ==================== Abstract Section ==================== -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Accurate fruit counting in real-world agricultural environments is a long-standing challenge due to visual occlusions, semantic ambiguity, and the high computational demands of 3D reconstruction. Existing methods based on neural radiance fields suffer from low inference speed, limited generalization, and lack of support for open-set semantic control. This paper introduces <strong>FruitLangGS</strong>, a real-time 3D fruit counting framework that addresses these limitations through spatial reconstruction, semantic embedding, and language-guided instance estimation. FruitLangGS first reconstructs orchard-scale scenes using an adaptive Gaussian splatting pipeline with radius-aware pruning and tile-based rasterization for efficient rendering. To enable semantic control, each Gaussian encodes a compressed CLIP-aligned language embedding, forming a compact and queryable 3D representation. At inference time, prompt-based semantic filtering is applied directly in 3D space, without relying on image-space segmentation or view-level fusion. The selected Gaussians are then converted into dense point clouds via distribution-aware sampling and clustered to estimate fruit counts. Experimental results on real orchard data demonstrate that FruitLangGS achieves higher rendering speed, semantic flexibility, and counting accuracy compared to prior approaches, offering a new perspective for language-driven, real-time neural rendering in agricultural robotics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ==================== /Abstract Section ==================== -->
+
+  <!-- ==================== Figure Carousel Section ==================== -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3 has-text-centered">Key Figures</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <!-- Item 1: Pipeline Overview -->
+          <div class="item">
+            <img src="static/images/figure1_pipeline_overview.png" alt="Figure 1: FruitLangGS Pipeline Overview"/>
+            <h2 class="subtitle has-text-centered">
+              Figure 1 – Overview of the FruitLangGS pipeline for real-time reconstruction and counting.
+            </h2>
+          </div>
+          <!-- Item 2: Architecture Diagram -->
+          <div class="item">
+            <img src="static/images/figure2_architecture.png" alt="Figure 2: FruitLangGS Architecture"/>
+            <h2 class="subtitle has-text-centered">
+              Figure 2 – Architecture of FruitLangGS: adaptive Gaussian splatting, semantic embedding, and counting.
+            </h2>
+          </div>
+          <!-- Item 3: Qualitative Results -->
+          <div class="item">
+            <img src="static/images/figure3_qualitative_results.png" alt="Figure 3: Qualitative Results"/>
+            <h2 class="subtitle has-text-centered">
+              Figure 3 – Qualitative results on representative orchard scenes (Tree01–03, Fuji-SfM).
+            </h2>
+          </div>
+          <!-- Item 4: Performance Chart -->
+          <div class="item">
+            <img src="static/images/figure4_performance_chart.png" alt="Figure 4: Performance Comparison"/>
+            <h2 class="subtitle has-text-centered">
+              Figure 4 – Rendering speed and reconstruction quality comparison across baselines.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ==================== /Figure Carousel Section ==================== -->
+
+  <!-- ==================== Video Presentation Section ==================== -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3 has-text-centered">Video Presentation</h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="publication-video">
+              <!-- Embed a talk or demo video if available -->
+              <iframe width="100%" height="450" src="https://www.youtube.com/embed/your_video_id" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ==================== /Video Presentation Section ==================== -->
+
+  <!-- ==================== Poster / PDF Section ==================== -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title has-text-centered">Full Paper (PDF)</h2>
+        <iframe src="static/pdfs/CountingFruit_paper.pdf" width="100%" height="600"></iframe>
+      </div>
+    </div>
+  </section>
+  <!-- ==================== /Poster / PDF Section ==================== -->
+
+  <!-- ==================== BibTeX Citation Section ==================== -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+@inproceedings{CountingFruit2025,
+  title     = {CountingFruit: Real-Time 3D Fruit Counting with Language-Guided Semantic Gaussian Splatting},
+  author    = {First Author and Second Author and Third Author},
+  booktitle = {Proceedings of the 2025 Symposium on Computer Architecture and Intelligent Systems in Agriculture (SCAASA)},
+  year      = {2025},
+  pages     = {1--8},
+  publisher = {ACM},
+  doi       = {10.1145/xxxxx.xxxxx},
+}
+      </code></pre>
+    </div>
+  </section>
+  <!-- ==================== /BibTeX Citation Section ==================== -->
+
+  <!-- ==================== Footer Section ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content has-text-centered">
+            <p>
+              This page was built using a customized version of the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>, originally adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page. Please link back to this page if you borrow any code. <br>
+              This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              &copy; 2025 First Author, Second Author, Third Author
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ==================== /Footer Section ==================== -->
+
+  <!-- Statcounter tracking code (optional) -->
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+  <!-- End of Statcounter Code -->
+</body>
+</html>
